@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 type Duck interface {
-  quack() string
-  dance() string
+	quack() string
+	dance() string
 }
 
 type Wolf struct {
