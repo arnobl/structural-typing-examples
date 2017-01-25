@@ -1,0 +1,3 @@
+scalac Main.scala
+scala Main
+rm *.class
