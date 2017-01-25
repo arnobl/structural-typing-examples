@@ -5,7 +5,7 @@ interface Duck {
 }
 
 class Wolf {
-	public String eat(final Duck duck) { return " 😈 " + duck; }
+	public String eat(final Duck duck) { return " 😈 "; }
 }
 
 class Mallard implements Duck {

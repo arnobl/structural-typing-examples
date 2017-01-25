@@ -9,7 +9,7 @@ trait Duck {
 class Wolf {
 	def quack : String = "QUACK QUACK WHOO"
 	def dance : String = " ¯\\_()_/¯ "
-	def eat(duck : Duck) : String = " 😈 " + duck
+	def eat(duck : Duck) : String = " 😈 "
 }
 
 class Mallard extends Duck{
