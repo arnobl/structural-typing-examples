@@ -1,7 +1,14 @@
 
-type duck = <quake : string ; dance : string>
+(*type duck = <quake : string ; dance : string>*)
+
+(* A virtual class instead of a type to make mallard an explicit sub-class of duck *)
+class virtual duck = object
+	method virtual quake : string
+	method virtual dance : string
+end
 
 class mallard = object
+	inherit duck
 	method quake : string = "quack quack"
 	method dance : string = " _/¯ "
 end
