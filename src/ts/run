@@ -1,0 +1,5 @@
+# npm install -g typescript
+
+tsc duck.ts
+node duck.js
+rm duck.js
