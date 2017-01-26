@@ -25,7 +25,7 @@ The program creates a `Wolf` called `wolf`, then declares a `Duck` called `theDu
 
 `theDuck` and `aDuck` dance.
 
-`theDuck` eats `aDuck`.
+`wolf` eats `aDuck`.
 
 The output of the program should be:
 
