@@ -5,7 +5,7 @@ interface Duck {
 }
 
 class Wolf {
-	public String eat(final Duck duck) { return " 😈 "; }
+	public String eat(Duck d) { return " 😈 "; }
 }
 
 class Mallard implements Duck {
@@ -14,9 +14,9 @@ class Mallard implements Duck {
 }
 
 class DuckCosplay implements Duck {
-	private final Wolf wolf;
+	Wolf wolf;
 
-	public DuckCosplay(final Wolf w) { wolf = w; }
+	DuckCosplay(Wolf w) { wolf = w; }
 	public String quack() { return "QUACK QUACK WHOO"; }
 	public String dance() { return " ¯\\_()_/¯ "; }	
 }
@@ -24,9 +24,9 @@ class DuckCosplay implements Duck {
 
 public class Main {
 	public static void main(String[] args) {
-		final Wolf wolf 	= new Wolf();
-		final Duck theDuck= new DuckCosplay(wolf);
-		final Duck aDuck 	= new Mallard();
+		Wolf wolf = new Wolf();
+		Duck theDuck = new DuckCosplay(wolf);
+		Duck aDuck = new Mallard();
 
 		System.out.println(aDuck.quack());
 		System.out.println(theDuck.quack());

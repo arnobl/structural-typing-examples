@@ -14,19 +14,19 @@ type Mallard struct {
 }
 
 
-func (m Mallard) quack() string { return "quack quack" }
-func (m Mallard) dance() string  { return " _/¯ " }
+func (mallard Mallard) quack() string { return "quack quack" }
+func (mallard Mallard) dance() string  { return " _/¯ " }
 
-func (w Wolf) quack() string { return "QUACK QUACK WHOO" }
-func (w Wolf) dance() string  { return " ¯\\_()_/¯ " }
-func (w Wolf) eat(duck Duck) string  { return " 😈 " }
+func (wolf Wolf) quack() string { return "QUACK QUACK WHOO" }
+func (wolf Wolf) dance() string  { return " ¯\\_()_/¯ " }
+func (wolf Wolf) eat(duck Duck) string  { return " 😈 " }
 
 
 func main() {
 	var wolf Wolf
 	var theDuck Duck
 
-	theDuck = &wolf
+	theDuck = &wolf /* Type inference between Wolf and Duck. & used not to copy the wolf but to use its reference. */
 
 	var aDuck Mallard
 
