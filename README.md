@@ -21,10 +21,13 @@ A type `Mallard` (implicitly or explicitly) implements the `Duck` type: `quake` 
 
 The program creates a `Wolf` called `wolf`, then declares a `Duck` called `theDuck`. The `wolf` then takes the form of a `Duck` through `theDuck`. A `Mallard` called `aDuck` is then created.
 
-`theDuck` and `aDuck` quake.
+In a dedicated method called `twoDucksAlone` that takes as arguments two ducks `d1` and `d2` :
 
-`theDuck` and `aDuck` dance.
+`d1` and `d2` quake.
 
+`d1` and `d2` dance.
+
+After this method call with `aDuck` and `theDuck` as parameters:
 `wolf` eats `aDuck`.
 
 The output of the program should be:
