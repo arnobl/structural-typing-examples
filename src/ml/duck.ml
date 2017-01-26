@@ -7,7 +7,7 @@ class mallard = object
 end
 
 class wolf = object
-	method quakde : string = "QUACK QUACK WHOO"
+	method quake : string = "QUACK QUACK WHOO"
 	method dance : string = " ¯\\_()_/¯ "
 	method eat(d : duck) : string = " 😈 "
 end
