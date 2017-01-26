@@ -30,11 +30,15 @@ func main() {
 
 	var aDuck Mallard
 
-	fmt.Printf("%s\n", aDuck.quack())
-	fmt.Printf("%s\n", theDuck.quack())
-
-	fmt.Printf("%s\n", aDuck.dance())
-	fmt.Printf("%s\n", theDuck.dance())
+	twoDucksAlone(aDuck, theDuck)
 
 	fmt.Printf("%s\n", wolf.eat(aDuck))
+}
+
+func twoDucksAlone(d1 Duck, d2 Duck) {
+	fmt.Printf("%s\n", d1.quack())
+	fmt.Printf("%s\n", d2.quack())
+
+	fmt.Printf("%s\n", d1.dance())
+	fmt.Printf("%s\n", d2.dance())
 }

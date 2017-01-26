@@ -12,15 +12,19 @@ class Mallard{
 }
 
 
+function twoDucksAlone(d1, d2) {
+	console.log(d1.quack())
+	console.log(d2.quack())
+
+	console.log(d1.dance())
+	console.log(d2.dance())
+}
+
+
 let wolf = new Wolf()
 let theDuck = wolf
-
 let aDuck = new Mallard()
 
-console.log(aDuck.quack())
-console.log(theDuck.quack())
-
-console.log(aDuck.dance())
-console.log(theDuck.dance())
+twoDucksAlone(aDuck, theDuck)
 
 console.log(wolf.eat(aDuck))

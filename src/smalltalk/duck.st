@@ -9,15 +9,23 @@ Object subclass: Wolf [
   eat: duck [ ^' 😈 ' ]
 ]
 
+Object subclass: Forest [
+	twoDucksAlone: d1 and: d2 [
+		Transcript show: d1 quack; cr.
+		Transcript show: d2 quack; cr.
+
+		Transcript show: d1 dance; cr.
+		Transcript show: d2 dance; cr.
+	]
+]
+
 wolf := Wolf new.
 theDuck := wolf.
 
 aDuck := Mallard new.
 
-Transcript show: aDuck quack; cr.
-Transcript show: theDuck quack; cr.
+forest := Forest new.
 
-Transcript show: aDuck dance; cr.
-Transcript show: theDuck dance; cr.
+forest twoDucksAlone: aDuck and: theDuck.
 
 Transcript show: (wolf eat: aDuck); cr.

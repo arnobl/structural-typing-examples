@@ -19,18 +19,24 @@ class Mallard extends Duck{
 
 
 object Main {
+	type duckType = {def quack:String; def dance:String}
+
 	def main(args : Array[String]) {
 		val wolf : Wolf = new Wolf()
-		val theDuck: {def quack:String; def dance:String} = wolf
+		val theDuck: duckType = wolf // Not mandatory
 
 		val aDuck : Duck = new Mallard()
 
-		println(aDuck.quack)
-		println(theDuck.quack)
-
-		println(aDuck.dance)
-		println(theDuck.dance)
+		twoDucksAlone(aDuck, theDuck)
 
 		println(wolf.eat(aDuck))
+	}
+
+	def twoDucksAlone(d1: duckType, d2: duckType) = {
+		println(d1.quack)
+		println(d2.quack)
+
+		println(d1.dance)
+		println(d2.dance)
 	}
 }

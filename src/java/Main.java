@@ -28,13 +28,17 @@ public class Main {
 		Duck theDuck = new DuckCosplay(wolf);
 		Duck aDuck = new Mallard();
 
-		System.out.println(aDuck.quack());
-		System.out.println(theDuck.quack());
-
-		System.out.println(aDuck.dance());
-		System.out.println(theDuck.dance());
+		twoDucksAlone(aDuck, theDuck);
 
 		System.out.println(wolf.eat(aDuck));
+	}
+
+	public static void twoDucksAlone(Duck d1, Duck d2) {
+		System.out.println(d1.quack());
+		System.out.println(d2.quack());
+
+		System.out.println(d1.dance());
+		System.out.println(d2.dance());
 	}
 }
 
