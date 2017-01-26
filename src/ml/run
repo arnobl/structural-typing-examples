@@ -1,0 +1,5 @@
+ocamlc -o duck duck.ml
+./duck
+rm ./duck
+rm ./duck.cmo
+rm ./duck.cmi
