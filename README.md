@@ -28,6 +28,7 @@ In a dedicated method called `twoDucksAlone` that takes as arguments two ducks `
 `d1` and `d2` dance.
 
 After this method call with `aDuck` and `theDuck` as parameters:
+
 `wolf` eats `aDuck`.
 
 The output of the program should be:
