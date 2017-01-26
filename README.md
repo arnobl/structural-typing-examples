@@ -1,4 +1,4 @@
-Examples in various object-oriented programming languages about how structural typing is supported.
+Examples in various object-oriented programming languages about how structural typing (and duck-typing) is supported.
 Solutions with languages that do not support structural typing are also detailed with a workaround solution (e.g., using an adapter).
 
 Contributions (pull requests) are welcome.
