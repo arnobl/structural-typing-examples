@@ -1,0 +1,3 @@
+erlc duck.erl
+erl -noshell -s duck main -s init stop
+rm ./duck.beam
