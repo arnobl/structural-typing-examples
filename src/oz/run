@@ -1,0 +1,3 @@
+ozc -x duck.oz
+ozengine duck
+rm ./duck
