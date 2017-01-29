@@ -5,7 +5,7 @@ create {ANY}
 
 feature {ANY}
 
-    main
+    main is
         local
             wolf: WOLF
             cosplay: DUCK_COSPLAY
@@ -26,7 +26,7 @@ feature {ANY}
 
 feature {}
 
-    two_ducks_alone(d1: DUCK; d2: DUCK)
+    two_ducks_alone(d1: DUCK; d2: DUCK) is
         do
             io.put_string(d1.quack)
             io.put_string(d2.quack)

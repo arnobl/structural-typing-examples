@@ -3,7 +3,7 @@ class
 
 feature {ANY}
 
-    eat(duck: DUCK) : STRING
+    eat(duck: DUCK) : STRING is
         do
             Result := " 😈 %N"
         end
