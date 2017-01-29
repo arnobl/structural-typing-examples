@@ -1,3 +1,5 @@
+# Compiled with the Liverty-Eiffel project
+
 se compile main.e -o duck
 ./duck
 rm ./duck
