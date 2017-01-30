@@ -11,13 +11,13 @@ main() ->
 
     io:fwrite(eat(TheWolf, ADuck)).
 
-eat(wolf, _) -> " 😈 ~n".
+eat(wolf, _) -> unicode:characters_to_binary(" 😈 ~n").
 
 quack(wolf) -> "QUACK QUACK WHOO~n";
 quack(mallard) -> "quack quack~n".
 
-dance(wolf) -> " ¯\\_()_/¯ ~n";
-dance(mallard) -> " _/¯ ~n".
+dance(wolf) -> unicode:characters_to_binary(" ¯\\_()_/¯ ~n");
+dance(mallard) -> unicode:characters_to_binary(" _/¯ ~n").
 
 twoDucksAlone(D1, D2) ->
     io:fwrite(quack(D1)),
