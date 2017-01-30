@@ -8,14 +8,16 @@ feature {ANY}
     main is
         local
             wolf: WOLF
+            cosplay: DUCK_COSPLAY
             the_duck: DUCK
             mallard: MALLARD
             a_duck: DUCK
         do
             create wolf
+            create cosplay.disguise(wolf)
             create mallard
 
-            the_duck := wolf.to_duck
+            the_duck := cosplay
             a_duck := mallard
 
             two_ducks_alone(the_duck, a_duck)
