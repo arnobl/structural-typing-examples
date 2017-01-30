@@ -1,0 +1,5 @@
+ghc duck.hs
+./duck
+rm ./duck
+rm ./duck.hi
+rm ./duck.o
