@@ -1,0 +1,3 @@
+g++ duck.cpp -o duck
+./duck
+rm ./duck
