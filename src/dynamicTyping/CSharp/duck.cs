@@ -19,7 +19,7 @@ class Wolf {
 class Program {
 	static void Main(string[] args) {
 		Wolf theWolf = new Wolf();
-		dynamic theDuck = theWolf; // No necessary.
+		dynamic theDuck = theWolf; // Not necessary.
 
 		Duck aDuck = new Mallard();
 
