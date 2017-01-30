@@ -23,7 +23,7 @@ feature {ANY}
 
     dance : STRING is
         do
-            Result := " ¯\\_()_/¯ %N"
+            Result := " ¯\_()_/¯ %N"
         end
 
 end
