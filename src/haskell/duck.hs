@@ -1,6 +1,6 @@
 {- A typeclass that Wolf and Mallard will have to explicitly instantiate -}
 class Duck a where
-    quake :: a -> String
+    quack :: a -> String
     dance :: a -> String
 
 data Wolf = Wolf
@@ -14,18 +14,18 @@ eat _ _ = " 😈 "
 - is not a Duck, so it has to disguise himself. -}
 data DuckCosplay = DuckCosplay Wolf
 instance Duck DuckCosplay where
-    quake _ = "QUACK QUACK WHOO"
+    quack _ = "QUACK QUACK WHOO"
     dance _ = " ¯\\_()_/¯ "
 
 data Mallard = Mallard
 instance Duck Mallard where
-    quake _ = "quack quack"
+    quack _ = "quack quack"
     dance _ = " _/¯ "
 
 twoDucksAlone :: (Duck aDuck, Duck theDuck) => aDuck -> theDuck -> IO()
 twoDucksAlone aDuck theDuck = do
-    putStrLn (quake aDuck)
-    putStrLn (quake theDuck)
+    putStrLn (quack aDuck)
+    putStrLn (quack theDuck)
 
     putStrLn (dance aDuck)
     putStrLn (dance theDuck)
