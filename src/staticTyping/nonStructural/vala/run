@@ -1,0 +1,3 @@
+valac duck.vala
+./duck
+rm ./duck
