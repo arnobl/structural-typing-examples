@@ -6,6 +6,8 @@ interface Duck {
 
 class Wolf {
 	public String eat(Duck d) { return " 😈 "; }
+	public String quack() { return "QUACK QUACK WHOO"; }
+	public String dance() { return " ¯\\_()_/¯ "; }	
 }
 
 class Mallard implements Duck {
@@ -17,8 +19,8 @@ class DuckCosplay implements Duck {
 	Wolf wolf;
 
 	DuckCosplay(Wolf w) { wolf = w; }
-	public String quack() { return "QUACK QUACK WHOO"; }
-	public String dance() { return " ¯\\_()_/¯ "; }	
+	public String quack() { return wolf.quack(); }
+	public String dance() { return wolf.dance(); }	
 }
 
 
