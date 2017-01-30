@@ -1,0 +1,8 @@
+# Compiled with the Liverty-Eiffel project
+
+se compile main.e -o duck
+./duck
+rm ./duck
+rm ./main1.{c,o}
+rm ./main2.{c,o}
+rm ./main.{h,id}
