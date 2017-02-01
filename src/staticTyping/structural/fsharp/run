@@ -1,0 +1,6 @@
+# http://fsharp.org/use/linux/
+
+fsharpc duck.fs
+mono duck.exe
+
+rm ./duck.exe
