@@ -1,3 +1,0 @@
-mcs duck.cs
-mono duck.exe
-rm ./duck.exe
