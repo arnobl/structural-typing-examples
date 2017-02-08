@@ -1,14 +1,4 @@
-from abc import ABCMeta, abstractmethod
-
-class Duck(metaclass=ABCMeta):
-  @abstractmethod
-  def dance(self): 
-    pass
-  @abstractmethod
-  def talk(self):
-    pass
-
-class Mallard(Duck):
+class Mallard:
   def dance(self):
     return " _/¯ "
   def talk(self):
