@@ -1,0 +1,2 @@
+#!/bin/bash
+groovy ${BASH_SOURCE%/*}/duck.groovy
