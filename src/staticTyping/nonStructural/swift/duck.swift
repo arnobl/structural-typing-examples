@@ -30,22 +30,6 @@ class Wolf {
     }
 }
 
-class DuckCosplay : Duck {
-    let wolf : Wolf
-    
-    init(w : Wolf) {
-        wolf = w;
-    }
-    
-    func quake() -> String {
-        return wolf.quake()
-    }
-    
-    func dance() -> String {
-        return wolf.dance()
-    }
-}
-
 
 func twoDucksAlone(d1 : Duck, d2 : Duck) {
     print(d1.quake())
@@ -57,8 +41,13 @@ func twoDucksAlone(d1 : Duck, d2 : Duck) {
 
 let duck : Duck = Mallard()
 let wolf = Wolf()
-let theDuck : Duck = DuckCosplay(w : wolf)
 
-twoDucksAlone(d1 : duck, d2 : theDuck)
+// Adding the type Duck to Wolf. Because Wolf already implements the same functions than those 
+// provided by Duck, there is nothing to implement here.
+// This is not structural typing but a kind of open class system.
+// Now wolf is technically a Duck, breaking the rule of the exercice, but this feature is funny and shows
+// how a wolf can transform itself as a Duck.
+extension Wolf : Duck {}
+
+twoDucksAlone(d1 : duck, d2: wolf)
 print(wolf.eat(duck : duck))
-
