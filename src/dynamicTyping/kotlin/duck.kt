@@ -1,10 +1,10 @@
 interface Duck {
-    fun quake() : String
+    fun quack() : String
     fun dance() : String
 }
 
 class Mallard : Duck {
-    override fun quake() : String {
+    override fun quack() : String {
         return "quack quack"
     }
     
@@ -14,7 +14,7 @@ class Mallard : Duck {
 }
 
 class Wolf {
-    fun quake() : String {
+    fun quack() : String {
         return "QUACK QUACK WHOO"
     }
     
@@ -29,8 +29,8 @@ class Wolf {
 
 // Kotlin dynamic typing only works when compiling to js.
 fun twoDucksAlone(d1 : dynamic, d2 : dynamic) {
-    println(d1.quake())
-    println(d2.quake())
+    println(d1.quack())
+    println(d2.quack())
     println(d1.dance())
     println(d2.dance())
 }

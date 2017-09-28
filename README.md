@@ -15,17 +15,17 @@ Please follow this format (take a look at the existing solutions):
 
 ## Scenario
 
-A type `Duck` exists with two functions `quake` and `dance` that return a string object.
+A type `Duck` exists with two functions `quack` and `dance` that return a string object.
 
-A type `Wolf` exists with three functions: `quake`, `dance`, and `eat`. The functions `quake` and `dance` have the same prototype than in `Duck` and respectively return: `"QUACK QUACK WHOO"` and `" ¯\_()_/¯ "`. The function `eat` takes a `Duck` instance as parameter and returns the string: `" 😈 "`. `Wolf` must not be defined as a `Duck` (i.e., no nominal typing). 
+A type `Wolf` exists with three functions: `quack`, `dance`, and `eat`. The functions `quack` and `dance` have the same prototype than in `Duck` and respectively return: `"QUACK QUACK WHOO"` and `" ¯\_()_/¯ "`. The function `eat` takes a `Duck` instance as parameter and returns the string: `" 😈 "`. `Wolf` must not be defined as a `Duck` (i.e., no nominal typing). 
 
-A type `Mallard` (implicitly or explicitly) implements the `Duck` type: `quake` returns `"quack quack"` and `dance` returns `" _/¯ "`.
+A type `Mallard` (implicitly or explicitly) implements the `Duck` type: `quack` returns `"quack quack"` and `dance` returns `" _/¯ "`.
 
 The program creates a `Wolf` called `wolf`, then declares a `Duck` called `theDuck`. The `wolf` then takes the form of a `Duck` through `theDuck`. A `Mallard` called `aDuck` is then created.
 
 In a dedicated method called `twoDucksAlone` that takes as arguments two ducks `d1` and `d2` :
 
-`d1` and `d2` quake.
+`d1` and `d2` quack.
 
 `d1` and `d2` dance.
 
