@@ -1,12 +1,12 @@
 
 protocol Duck {
-    func quake() -> String
+    func quack() -> String
     func dance() -> String
 }
 
 
 class Mallard : Duck {
-    func quake() -> String {
+    func quack() -> String {
         return "quack quack"
     }
     
@@ -17,7 +17,7 @@ class Mallard : Duck {
 
 
 class Wolf {
-    func quake() -> String {
+    func quack() -> String {
         return "QUACK QUACK WHOO"
     }
     
@@ -32,8 +32,8 @@ class Wolf {
 
 
 func twoDucksAlone(d1 : Duck, d2 : Duck) {
-    print(d1.quake())
-    print(d2.quake())
+    print(d1.quack())
+    print(d2.quack())
     print(d1.dance())
     print(d2.dance())
 }
